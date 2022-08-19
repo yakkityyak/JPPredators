@@ -12,6 +12,7 @@
 		4029C6F228AE60C900E571C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4029C6F128AE60C900E571C8 /* Assets.xcassets */; };
 		4029C6F528AE60C900E571C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4029C6F428AE60C900E571C8 /* Preview Assets.xcassets */; };
 		4029C6FC28AF6C1500E571C8 /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = 4029C6FB28AF6C1500E571C8 /* jpapexpredators.json */; };
+		4029C6FE28AF6DD900E571C8 /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029C6FD28AF6DD900E571C8 /* ApexPredator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4029C6F128AE60C900E571C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4029C6F428AE60C900E571C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4029C6FB28AF6C1500E571C8 /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
+		4029C6FD28AF6DD900E571C8 /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				4029C6ED28AE60C800E571C8 /* JP_Apex_PredatorsApp.swift */,
+				4029C6FD28AF6DD900E571C8 /* ApexPredator.swift */,
 				4029C6EF28AE60C800E571C8 /* ContentView.swift */,
 				4029C6FB28AF6C1500E571C8 /* jpapexpredators.json */,
 				4029C6F128AE60C900E571C8 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4029C6FE28AF6DD900E571C8 /* ApexPredator.swift in Sources */,
 				4029C6F028AE60C800E571C8 /* ContentView.swift in Sources */,
 				4029C6EE28AE60C800E571C8 /* JP_Apex_PredatorsApp.swift in Sources */,
 			);
