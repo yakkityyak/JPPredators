@@ -8,7 +8,7 @@
 import Foundation
 
 class PredatorController {
-    var apexPredator: [ApexPredator] = []
+    var apexPredators: [ApexPredator] = []
     
     init() {
         decodeApexPredatorData()
@@ -20,7 +20,7 @@ class PredatorController {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                apexPredator = try decoder.decode([ApexPredator].self, from: data)
+                apexPredators = try decoder.decode([ApexPredator].self, from: data)
             } catch {
                 print("Error decoding JSON data: \(error)")
             }
