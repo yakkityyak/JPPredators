@@ -12,7 +12,7 @@ struct ApexPredator: Codable {
     let name: String
     let type: String
     let movies: [String]
-    let moviewScenes: [MovieScenes]
+    let movieScenes: [MovieScenes]
     let link: String
 }
 
