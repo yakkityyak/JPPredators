@@ -22,7 +22,7 @@ class PredatorController {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
-                apexPredators = try decoder.decode([ApexPredator].self, from: data)
+                allApexPredators = try decoder.decode([ApexPredator].self, from: data)
                 apexPredators = allApexPredators
             } catch {
                 print("Error decoding JSON data: \(error)")
@@ -32,7 +32,7 @@ class PredatorController {
     
     func typeIcon(for type: String) -> String {
         switch type {
-        case "all": return "square.stack.3d.up.fill"
+        case "All": return "square.stack.3d.up.fill"
         case "Land": return "leaf.fill"
         case "Air": return "wind"
         case "Sea": return "drop.fill"
