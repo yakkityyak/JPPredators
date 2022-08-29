@@ -12,7 +12,8 @@ struct PredatorRow: View {
     
     var body: some View {
         HStack{
-            Image("indoraptor")
+            //Filter - checking characters and removing spaces
+            Image(predator.name.lowercased().filter { $0 != " "} )
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
@@ -20,16 +21,16 @@ struct PredatorRow: View {
             
             VStack(alignment: .leading) {
                 // name
-                Text("Indoraptor")
+                Text(predator.name)
                     .fontWeight(.bold)
                 
                 // type
-                Text("Land")
+                Text(predator.type.capitalized)
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .padding(.horizontal, 13)
                     .padding(.vertical, 5)
-                    .overlay(RoundedRectangle(cornerRadius: 20).fill(.brown.opacity(0.33)))
+                    .overlay(RoundedRectangle(cornerRadius: 20).fill(predator.typeOverlay().opacity(0.33)))
             }
         }
     }
